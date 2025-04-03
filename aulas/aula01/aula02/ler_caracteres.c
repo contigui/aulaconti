@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    char tecla;
+    printf ("Pressione uma tecla e depois ENTER: ");
+    scanf ("%c",  &tecla);
+    // nao sabe tecla = valor entao precisa acessar o endereco da variavel com o operador &
+    getchar();
+    printf ("Voce pressionou a tecla: '%c'\n", tecla);
+
+    printf ("Pressione uma tecla e depois ENTER: ");
+    scanf ("%c",  &tecla);
+    getchar();
+    printf ("Voce pressionou a tecla: '%c'\n", tecla);
+
+    char nome [31];
+    printf("Informe seu nome:   ");
+    scanf("%[^\n]", nome);
+    printf("Ola %s!\n", nome);
+
+    
+    return 0;
+}
